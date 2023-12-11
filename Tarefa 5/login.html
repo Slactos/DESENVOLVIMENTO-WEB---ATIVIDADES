@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><body bgcolor="black">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Menu de Navegação</title>
+</head>
+<body>
+<center>
+    <div class="logo">
+        <img src="logo.jpeg"alt="logo"style="width:170px;height;170px;margin-left:15px;">
+        <font color=Blue>
+        <h1>Meu Primeiro Site</h1>
+    </div></center></font color>
+</body></body bgcolor>
+<body>
+<header>
+ <button id="open-menu" class="menu-button">
+    <i class="material-icons">Menu de Navegação</i>
+ </button>
+ <button id="close-menu" class="menu-button" style="display: none;">
+    <i class="material-icons">Fechar Menu de Navegação</i>
+ </button>
+</header>
+
+<nav id="navigation-menu">
+ <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="login.html">Entrar</a></li>
+    <li><a href="cadastro.html">Cadastro</a></li>
+ </ul>
+</nav>
+
+<body>
+    <div class="container"><font color = "blue">
+        <h1>LOGIN</h1>
+        <form action="/login" method="post">
+            <div class="input-field">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+        <p>Não tem uma conta ? <a href="cadastro.html">Cadastre-se</a></p>
+    </div></font color>
+</body>
+<script>
+ document.getElementById('open-menu').addEventListener('click', function() {
+    document.getElementById('navigation-menu').style.display = 'block';
+    document.getElementById('open-menu').style.display = 'none';
+    document.getElementById('close-menu').style.display = 'block';
+ });
+
+ document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('navigation-menu').style.display = 'none';
+    document.getElementById('open-menu').style.display = 'block';
+    document.getElementById('close-menu').style.display = 'none';
+ });
+</script>
+
+</body>
+<footer><center><font color="white">
+        <p>&copy; 2023 My Website. All rights reserved.</p></font color>
+   </center></footer>
+</html>
