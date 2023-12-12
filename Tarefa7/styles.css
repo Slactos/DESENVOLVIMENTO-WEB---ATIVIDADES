@@ -1,10 +1,22 @@
-/* Define espaçamentos internos e margens dos elementos */
 body {
  margin: 0;
  padding: 0;
+ background-color: black;
  box-sizing: border-box;
+ font-family: Arial, sans-serif;
 }
 
+h1 {
+    font-family: var(--fonte-titulo);
+    background-color: black;
+    color: blue;
+}
+
+p {
+    font-family: var(--fonte-corpo);
+    background-color: black;
+    color: blue;
+}
 header {
  padding: 20px;
 }
@@ -34,13 +46,11 @@ nav ul li a {
  text-decoration: none;
 }
 
-/* Define variáveis para o esquema de cores */
 :root {
  --cor-primaria: blue;
  --cor-secundaria: black;
 }
 
-/* Aplica as variáveis aos elementos */
 header {
  background-color: var(--cor-primaria);
  color: white;
@@ -50,26 +60,14 @@ nav ul li a:hover {
  color: white;
 }
 
-/* Define variáveis para a tipografia */
 :root {
  --fonte-titulo: Arial, sans-serif;
  --fonte-corpo: Times New Roman, serif;
 }
 
-/* Aplica as variáveis aos elementos */
-h1 {
- font-family: var(--fonte-titulo);
-}
-
-p {
- font-family: var(--fonte-corpo);
-}
-body {
-    font-family: Arial, sans-serif;
-}
-
 form {
     margin-top: 20px;
+    color: blue;
 }
 
 label {
